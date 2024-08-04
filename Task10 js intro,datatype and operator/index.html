@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let principal  = 1000;
+        let rate = 10;
+        let time = 3;
+        let n=1;
+
+        let interest = parseFloat(1+((rate/n)/100));
+        let amount  = principal*(interest*interest*interest);
+        console.log("The compount interest of 3 years is : "+parseInt(amount));
+    </script>
+</body>
+</html>
