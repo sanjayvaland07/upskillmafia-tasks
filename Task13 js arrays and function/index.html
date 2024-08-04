@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let arr = [4, 8, 2, 11, 6, 7, 10];
+
+        console.log("Ex Array :- ",arr);
+        maximum();
+        sumOfElements();
+        countOdd();
+
+
+        function maximum() {
+
+
+            let max = arr[0];
+            for (let i = 1; i < arr.length; i++) {
+                if (max < arr[i]) {
+                    max = arr[i];
+                }
+            }
+            console.log("Maximum number : ", max);
+        }
+
+        function sumOfElements() {
+            let sum = 0;
+            for (let i = 0; i < arr.length; i++) {
+                sum = sum + arr[i];
+            }
+            console.log("Sum of all elements : ", sum);
+        }
+
+        function countOdd(){
+            let count = 0;
+            for(let i=0;i<arr.length;i++)
+            {
+                if(arr[i]%2 != 0)
+                {
+                    count++;
+                }
+            }
+            console.log("Count of odd numbers : ",count);
+        }
+
+
+    </script>
+</body>
+
+</html>
