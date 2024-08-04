@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment</title>
+    <link rel="stylesheet" href="css/payment.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <div class="left-div">
+           <div class="left-inner">
+            <p class="title">Checkout</p>
+            <h2>Contact Details</h2>
+            <div class="contact-detail">
+                <label for="email">Email ID</label>
+                <input type="email" name="email" id="" placeholder="sanjayvaland@gmail.com">
+            </div>
+            <h2>Payment</h2>
+            <div class="payment-method">
+                <div class="icons">
+                    <div class="box">
+                        <i class='bx bx-credit-card'></i>
+                        <p>Card</p>
+                    </div>
+                    <div class="box">
+                        <i class='bx bx-bitcoin' ></i>
+                        <p>Crypto</p>
+                    </div>
+                    <div class="box">
+                        <i class='bx bxs-bank' ></i>
+                        <p>Bank</p>
+                    </div>
+                    
+                </div>
+                <div class="form-div">
+                    <form action="">
+                        <div class="input-box1">
+                            <label for="card-number">Card Number</label>
+                            <input type="text" name="card-number" id="" placeholder="sanjay valand">
+                        </div>
+                        <div class="input-box2">
+                            <div class="box1">
+                                <label for="expiry">Expiry</label>
+                                <input type="text" name="expiry" id="" placeholder="MM/YY">
+                            </div>
+                            <div class="box2">
+                                <label for="cvc">CVC</label>
+                                <input type="text" name="cvc" id="" placeholder="***">
+                            </div>
+                        </div>
+                        <div class="input-box3">
+                            <div class="box1">
+                                <label for="country">Country</label>
+                                <input type="text" name="country" id="" placeholder="India">
+                            </div>
+                            <div class="box2">
+                                <label for="zip">ZIP</label>
+                                <input type="text" name="zip" id="" placeholder="XXXXXX">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+           </div>
+        </div>
+        <div class="right-div">
+            <h1>Order Summary</h1>
+            <div class="payment">
+                <label for="coupon-code">Enter Coupon Code</label>
+                <div>
+                    <input type="text" name="coupon-code" id="" placeholder="COUPON CODE">
+                <button class="coupon-btn">Apply Coupon</button>
+                </div>
+                <p>
+                    <span>Sub Total</span>
+                    <span>$4,700</span>
+                </p>
+                <p>
+                    <span>Taxes (if applicable)</span>
+                    <span>$199</span>
+                </p>
+                <p>
+                    <span>Discount</span>
+                    <span>$0</span>
+                </p>
+                <p class="total">
+                    <span>Total</span>
+                    <span>$4,999</span>
+                </p>
+            </div>
+            <div class="payment-btn">
+                <button>Pay Now $4,999</button>
+            </div>
+            <div class="logos">
+                <img src="assets/secure1.png" alt="secure1">
+                <img src="assets/raz-logo.png" alt="razpay">
+                <img src="assets/secure2.png" alt="secure2">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

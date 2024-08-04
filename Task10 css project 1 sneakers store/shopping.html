@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shopping cart</title>
+    <link rel="stylesheet" href="css/shopping.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-logo">
+                <img src="assets/logo.png" alt="logo">
+            </div>
+            <div class="nav-link">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="shopping.html">Order Details</a></li>
+                    <li><a href="payment.html">Payment</a></li>
+                </ul>
+            </div>
+            <div class="nav-tool">
+                <input type="text" name="" id="" placeholder="Search">
+                <!-- <i class='bx bx-search'></i> -->
+                <button><i class='bx bx-cart' ></i>0</button>
+                <img src="assets/passport photo.png" alt="logo">
+            </div>
+            <label for="sidebar" class="menu-btn"><i class='bx bx-menu'></i></label>
+            
+            <input type="checkbox" name="sidebar" id="sidebar">
+            <div class="side-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="shopping.html">Order Details</a></li>
+                    <li><a href="payment.html">Payment</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <h1 class="heading">Shopping Cart</h1>
+    <section>
+        <div class="container">
+            <div class="left-div">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                            <th> </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Bata sport shoes</td>
+                            <td>- 1 +</td>
+                            <td>$4,999</td>
+                            <td>X</td>
+                        </tr>
+                        <tr>
+                            <td>Bata sport shoes</td>
+                            <td>- 1 +</td>
+                            <td>$4,999</td>
+                            <td>X</td>
+                        </tr>
+                        <tr>
+                            <td>Bata sport shoes</td>
+                            <td>- 1 +</td>
+                            <td>$4,999</td>
+                            <td>X</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="right-div">
+                <div class="payment">
+                    <label for="coupon-code">Enter Coupon Code</label>
+                    <div>
+                        <input type="text" name="coupon-code" id="" placeholder="COUPON CODE">
+                    <button class="coupon-btn">Apply Coupon</button>
+                    </div>
+                    <p>
+                        <span>Sub Total</span>
+                        <span>$4,700</span>
+                    </p>
+                    <p>
+                        <span>Taxes (if applicable)</span>
+                        <span>$199</span>
+                    </p>
+                    <p>
+                        <span>Discount</span>
+                        <span>$0</span>
+                    </p>
+                    <p class="total">
+                        <span>Total</span>
+                        <span>$4,999</span>
+                    </p>
+                </div>
+                <div class="payment-btn">
+                    <button>Pay Now $4,999</button>
+                </div>
+                <div class="logos">
+                    <img src="assets/secure1.png" alt="secure1">
+                    <img src="assets/raz-logo.png" alt="razpay">
+                    <img src="assets/secure2.png" alt="secure2">
+                </div>
+            </div>
+
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,241 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    
+}
+
+.navbar{
+    height: 10vh;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.navbar .nav-logo{
+    width: 10%;
+    height: 60%;
+}
+.navbar .nav-logo img{
+    width: 100%;
+    height: 100%;
+}
+.nav-link ul{
+    display: flex;
+}
+.nav-link ul li{
+    list-style: none;
+    margin-right: 20px;
+}
+.nav-link ul li a{
+    text-decoration: none;
+    color: black;
+}
+.navbar .nav-tool{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.navbar .nav-tool input{
+    height: 40px;
+    padding: 0 20px;
+    border-radius: 10px;
+}
+
+.navbar .nav-tool button{
+    height: 40px;
+}
+.navbar .nav-tool button{
+    padding: 0 10px;
+    border-radius: 10px;
+}
+.navbar .nav-tool button i{
+    font-size: 2rem;
+}
+.navbar .nav-tool img{
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+}
+.navbar .menu-btn{
+    display: none;
+    z-index: 2;
+}
+.navbar .menu-btn i{
+    font-size: 2.5rem;
+}
+.navbar .side-menu{
+    height: 100vh;
+    width: 40%;
+    background-color: #535353;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+.navbar .side-menu ul li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+.navbar .side-menu ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+/* .navbar .menu-btn:focus ~ .side-menu{
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+.navbar input[type="checkbox"]{
+    display: none;
+}
+.navbar input[type="checkbox"]:checked ~ .side-menu{
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar .nav-link ul li a:hover{
+    color: #ff7b00;
+}
+
+
+
+.container{
+    margin: 5vh 0 ;
+    height: 65vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid black; */
+}
+.container .left-div,.right-div{
+    width: 45%;
+    height: 100%;
+    /* border: 1px solid black; */
+}
+.container .left-div{
+    padding: 50px 50px;
+}
+.container .left-div img{
+    height: 30px;
+    width: 100px;
+    margin-bottom: 20px;
+}
+.container .left-div h1{
+    font-size: 3rem;
+    color: #212121;
+}
+.container .left-div p{
+    font-size: 1.5rem;
+    color: #535353;
+    margin: 20px 0;
+}
+.container .left-div button{
+    width: 200px;
+    height: 50px;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    background-color: #212121;
+    color: white;
+}
+.container .left-div button:hover{
+    background-color: #ff7b00;
+    
+}
+.container .right-div img{
+    width: 100%;
+    height: 100%;
+}
+
+.footer-div{
+    height: 15vh;
+    width: 100%;
+    border: 1px solid black;
+    background-color: #ff7b00;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.box{
+    display: flex;
+    height: 80%;
+    /* border: 1px solid black; */
+}
+.box div{
+    padding: 20px 0;
+}
+.box i{
+    font-size: 4rem;
+}
+
+@media screen and (max-width:768px) {
+    
+    .navbar .nav-link{
+        display: none;
+    }
+    .navbar .menu-btn{
+        display:  block;
+    }
+    .navbar .nav-logo{
+        width: 15%;
+    }
+    .container .left-div,.right-div{
+        width: 50%;
+    }
+    .container .left-div{
+        padding: 50px 20px;
+    }
+    .container .right-div img{
+        height: 80%;
+    }
+}
+
+@media  screen and (max-width:448px) {
+    html{
+        font-size: 12px;
+    }
+    .navbar .nav-logo{
+        width: 20%;
+    }
+    .navbar .nav-tool{
+        gap: 5px;
+    }
+    .navbar .nav-tool input[type="text"]{
+        width: 100px;
+    }
+    .container{
+        flex-direction: column;
+        margin: 0;
+        height: auto;
+    }
+    .container .left-div,.right-div{
+        width: 100vw;
+    }
+    .container .right-div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container .right-div img{
+        width: 80%;
+        height: 500px;
+    }
+    .footer-div{
+        flex-wrap: wrap;
+        height: auto;
+
+    }
+    .footer-div .box{
+        width: 40%;
+    }
+    
+}
