@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="nav">
+            <h1>
+                Hi, Username
+            </h1>
+            <button>Login</button>
+        </div>
+    </header>
+    <section>
+        <div class="section1">
+            <div class="searchbar">
+                <input type="text" name="searchbox" id="searchbox">
+                <button id="search">Search</button>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="section2">
+            <div class="students-detail" id="detail-div">
+
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        const students = [
+            { name: "sanjay", marks: 99, class: 12, address: "gujarat" },
+            { name: "samir", marks: 80, class: 10, address: "rajesthan" },
+            { name: "ajay", marks: 70, class: 10, address: "maharastra" },
+            { name: "tiger", marks: 75, class: 9, address: "delhi" },
+            { name: "sahrukh", marks: 50, class: 5, address: "punjab" },
+            { name: "kapil", marks: 66, class: 8, address: "hariyana" },
+            { name: "varun", marks: 40, class: 7, address: "uttarpradesh" },
+            { name: "rajkumar", marks: 55, class: 6, address: "karnatak" },
+            { name: "virat", marks: 77, class: 12, address: "bihar" },
+            { name: "mahendra", marks: 85, class: 7, address: "tamilnadu" },
+            { name: "hardik", marks: 78, class: 12, address: "gujarat" },
+            { name: "subhaman", marks: 87, class: 10, address: "gujarat" },
+            { name: "akshay", marks: 40, class: 9, address: "maharastra" },
+            { name: "alia", marks: 30, class: 5, address: "delhi" },
+            { name: "sraddha", marks: 50, class: 8, address: "punjab" }
+        ];
+
+        const div = document.querySelector("#detail-div");
+
+        display(students);
+
+        function display(arr) {
+            for (let i = 0; i < arr.length; i++) {
+                div.innerHTML += `
+                <div>
+                    <p>Student name : ${arr[i].name}</p>    
+                    <p>Student marks : ${arr[i].marks}</p>    
+                    <p>Student class : ${arr[i].class}</p>    
+                    <p>Student address : ${arr[i].address}</p>          
+                </div>
+            `
+            }
+        }
+
+        const btn = document.querySelector("#search");
+        const searchbox = document.querySelector("#searchbox");
+
+        btn.addEventListener("click",()=>{
+            let name = searchbox.value;
+            
+            const newArr = students.filter((Element)=>{
+                
+                if(Element.name.substring(0,name.length) === name.toLowerCase())
+                {
+                    return Element;
+                }
+            });
+
+            div.innerHTML = "";
+            display(newArr);
+            console.log(name);
+        });
+
+    </script>
+</body>
+
+</html>
