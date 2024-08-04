@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laundry Wallah / Laundry Mart</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+    
+
+    header div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 10vh;
+        background-color: black;
+        color: white;
+    }
+
+    .navbar ul li {
+        list-style: none;
+    }
+
+    .navbar ul li a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .navbar ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    #about{
+        max-width: 90%;
+        width: 50vw;
+        height: 50vh;
+        margin: 50px auto;
+        padding: 1rem;
+        border: 2px solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        border-radius: 1rem;
+    }
+    h2{
+        text-align: center;
+    }
+    #gallary{
+        width: 50vw;
+        height: 80vh;
+        margin: 50px auto;
+        padding: 1rem;
+        border: 2px solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        border-radius: 1rem;
+    }
+    #gallary .images{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    #gallary .images div{
+        width: 45%;
+        height: 45%;
+    }
+    #gallary .images div img{
+        width: 100%;
+        height: 100%;
+    }
+    #service{
+        width: 50vw;
+        height: 40vh;
+        margin: 50px auto;
+        padding: 1rem;
+        border: 2px solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        border-radius: 1rem;
+    }
+    #service .service-list{
+        width: 40%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        
+    }
+    #price{
+        width: 50vw;
+        height: 40vh;
+        margin: 50px auto;
+        padding: 1rem;
+        border: 2px solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        border-radius: 1rem;
+    }
+    #price table{
+        border:1px solid black;
+    }
+    #price table th,td{
+        text-align: center;
+        border: 1px solid black;
+        
+    }
+    #book-now{
+        width: 50vw;
+        height: 50vh;
+        margin: 50px auto;
+        padding: 1rem;
+        border: 2px solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 1rem;
+    }
+    #book-now input[type='text'],input[type='email'],input[type='number']{
+        height: 30px;
+        width: 200px;
+        margin-bottom: 20px;
+    }
+    #book-now input[type='submit']
+    {
+        width: 100px;
+        height: 40px;
+        background-color: green;
+    }
+    footer{
+        background-color: black;
+        height: 10vh;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    @media screen and (max-width:768px){
+        #about,#gallary,#service,#price,#book-now{
+            width: 90vw;
+        }
+    }
+</style>
+
+<body>
+    <header id="#home">
+        <div class="heading">
+            <h1>Welcome to Laundry Wallah / Laundry Mart.</h1>
+        </div>
+        <hr>
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#gallary">Gallary</a></li>
+                    <li><a href="#service">Service</a></li>
+                    <li><a href="#price">Price</a></li>
+                    <li><a href="#book-now">Booking</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section>
+        <div id="about">
+            <h2>About us</h2>
+            <p>Laundry Wallah, also known as Laundry Mart, is a modern solution to the age-old chore of laundry. With a
+                seamless blend of convenience and quality service, Laundry Wallah aims to simplify the lives of busy
+                individuals and families by offering comprehensive laundry services. From washing and folding to dry
+                cleaning delicate items, their experienced team ensures meticulous care and attention to detail. Through
+                user-friendly mobile apps or storefront locations, customers can easily schedule pickups, track orders,
+                and enjoy the convenience of doorstep delivery. Whether it's everyday garments or special fabrics,
+                Laundry Wallah promises a fresh and crisp finish every time, allowing customers to reclaim their time
+                and focus on what matters most.
+            </p>
+        </div>
+    </section>
+    <section>
+        <div id="gallary">
+            <h2>Images</h2>
+            <div class="images">
+            <div><img src="assets/img1.jpg" alt="image 1"></div>
+            <div><img src="assets/img2.jpg" alt="image 2"></div>
+            <div><img src="assets/img3.png" alt="image 3"></div>
+            <div><img src="assets/img4.jpg" alt="image 4"></div>
+        </div>
+    </section>
+    <section>
+        <div id="service">
+            <h2>Our Services</h2>
+           <div class="service-list">
+            <ul>
+                <li>Washing and Drying</li>
+                <li>Ironing and Folding</li>
+                <li>Dry Cleaning</li>
+                <li>Stain Removal</li>
+                <li>Express Services</li>
+                <li>Special Garment Care</li>
+                <li>more</li>
+            </ul>
+           </div>
+        </div>
+    </section>
+    <section>
+        
+        <div id="price">
+            <h2>Price List</h2>
+            <table>
+                <tr>
+                    <th>Services</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Washing and Drying</td>
+                    <td>Rs 10.00</td>
+                </tr>
+                <tr>
+                    <td> Ironing and Folding</td>
+                    <td>Rs 5.00</td>
+                </tr>
+                <tr>
+                    <td>Express Service</td>
+                    <td>Rs 20.00</td>
+                </tr>
+                <tr>
+                    <td>Stain Removal</td>
+                    <td>Rs 7.00</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <section>
+        <div id="book-now">
+            <h2>Book Now</h2>
+            <form action="">
+                <label for="username">Username</label><br>
+                <input type="text" name="username" id="" placeholder="username"><br>
+                <label for="email">Email</label><br>
+                <input type="email" name="email" id="" placeholder="email"><br>
+                <label for="phone">Phone</label><br>
+                <input type="number" name="phone" id="" placeholder="phone"><br>
+                <input type="submit" value="submit">
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p>Contact us at: info@laundrymart.com.</p>
+    </footer>
+</body>
+
+</html>
