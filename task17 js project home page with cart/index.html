@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luandary responsive</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "tHG8djAQ71ASdEYFZ",
+      });
+   })();
+</script>
+    
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-logo">
+                <img src="assets/laundary-logo.png" alt="laundary-logo">
+            </div>
+            <div class="nav-link">
+                <ul>
+                    <li>Home</li>
+                    <li>Services</li>
+                    <li>About Us</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+            <div class="username">
+                <h1>Sanjay</h1>
+            </div>
+            <button id="sidemenu">
+                <div></div>
+                <div></div>
+                <div></div>
+            </button>
+            <aside id="aside-menu" class="">
+                <div class="side-menu">
+                    <ul>
+                        <li>Home</li>
+                        <li>Services</li>
+                        <li>About Us</li>
+                        <li>Contact Us</li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </header>
+    
+    <section class="hero-section">
+        <div class="container">
+            <div class="detail">
+                <h1>Revitalize Your</h1>
+                <h1>Clothes With Expert</h1>
+                <h1>Laundary Services!</h1>
+                <p>From premium dry cleaning to swift wash and fold, we deliver care and convenience. Schedule a pickup and rediscover the freshness of your clothes today!</p>
+                <button type="submit" class="btn size"><a href="#section2" style="text-decoration: none;color: white;">Book a service today!</a></button>
+            </div>
+            <div class="hero-img">
+                <img src="assets/hero.jpg" alt="hero image">
+            </div>
+        </div>
+        <div class="hero-foot">
+            <div class="hero-foot-head">
+                <h1>Our Achivements</h1>
+            </div>
+            <div class="hero-foot-detail">
+                <div>
+                    <h2>15+</h2>
+                    <p>Laundary Services</p>
+                </div>
+                <div>
+                    <h2>240+</h2>
+                    <p>Happy Customers</p>
+                </div>
+                <div>
+                    <h2>2+ Yrs</h2>
+                    <p>Experience</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+
+
+    <section>
+        <div class="section2" id="section2">
+            <div class="left">
+                <div class="up">
+                    <div class="item-table">
+                        <div class="header">
+                            <h2>Added Items</h2>
+                        </div>
+                        <table id="added-item" style="width: 100%;">
+                           <thead>
+                            <tr>
+                                <td>Sr No</td>
+                                <td>Service Name</td>
+                                <td>Price</td>
+                            </tr>
+                           </thead>
+                           <tbody id="add-new-item">
+                                
+                           </tbody>
+                        </table>
+                        <div class="diolog">
+                            <p><i class="fa-solid fa-circle-info"></i></p>
+                            <h2>No Items Added</h2>
+                            <p>Add Items to the cart from Service bar   </p>
+                        </div>
+                    </div>
+                    <div class="result">
+                        <h2>Total amount </h2>
+                        <h2>₹<span id="total">0</span></h2>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="header">
+                        <h2>Book Now</h2>
+                    </div>
+                    <form action="">
+                        <div class="input-box1">
+                            <label for="fullname">Full Name</label>
+                            <input type="text" name="fullname" id="fullname" placeholder="sanjay valand">
+                        </div>
+                        <div class="input-box2">
+                            <div class="left-box">
+                                <label for="email">Email Id</label>
+                                <input type="email" name="email" id="emailid" placeholder="legendprogrammer@gmail.com">
+                            </div>
+                            <div class="right-box">
+                                <label for="phone">Phone Number</label>
+                                <input type="text" name="phone" id="phonenumber" placeholder="1234567890">
+                            </div>
+                        </div>
+                    </form>
+                    <div class="btn">
+                        <button id="book-btn" class="lightviolet">Book Now</button>
+                    </div>
+                    <p class="warning hide"><i class="fa-solid fa-circle-info"></i> Add the item to the cart to book</p>
+                    <p class="success hide" style="color: green;"><i class="fa-solid fa-circle-info"></i> Email has been send successfully</p>
+                     
+                </div>
+            </div>
+            <div class="right">
+                <div class="head">
+                <h1>Browse our Services</h1>
+                <p>Click on the add to cart button to add the services to your cart or press skip</p>
+                </div>
+    
+                <div class="items">
+                    <table style="width: 100%;border-collapse: collapse;">
+                        <tr>
+                            <td><img src="assets/dry cleaning.jpg" alt="" class="item-img"></td>
+                            <td>Dry Cleaning</td>
+                            <td>₹200.00</td>
+                            <td><button class="item-btn" id="item-1">Add Item</button></td>
+                        </tr>
+                        <tr>
+                            <td><img src="assets/washing and fold.png" alt="" class="item-img"></td>
+                            <td>Wash & Fold</td>
+                            <td>₹100.00</td>
+                            <td><button class="item-btn" id="item-2">Add Item</button></td>
+                        </tr>
+                        <tr>
+                            <td><img src="assets/ironing.png" alt="" class="item-img"></td>
+                            <td>Ironing</td>
+                            <td>₹30.00</td>
+                            <td><button class="item-btn" id="item-3">Add Item</button></td>
+                        </tr>
+                        <tr>
+                            <td><img src="assets/stain remove.png" alt="" class="item-img"></td>
+                            <td>Stain Removal</td>
+                            <td>₹500.00</td>
+                            <td><button class="item-btn" id="item-4">Add Item</button></td>
+                        </tr>
+                        <tr>
+                            <td><img src="assets/leather cleaning.png" alt="" class="item-img"></td>
+                            <td>Leather & Suede Cleaning</td>
+                            <td>₹999.00</td>
+                            <td><button class="item-btn" id="item-5">Add Item</button></td>
+                        </tr>
+                        <tr>
+                            <td><img src="assets/wedding cleaning.png" alt="" class="item-img"></td>
+                            <td>Wedding Dress Cleaning</td>
+                            <td>₹2800.00</td>
+                            <td><button class="item-btn" id="item-6">Add Item</button></td>
+                        </tr>
+                    </table>
+                    <!-- <div class="item-image">
+                        <img id="service-img" src="assets/product1.png" alt="product1">
+                    </div>
+                    <div class="item-detail">
+                        <h2 id="service-name">Sport Shoes</h2>
+                        <h2  style="color: cornflowerblue;">₹<span id="service-price">200.00</span></h2>
+                    </div>
+                    <div class="buttons">
+                        <button class="skip-btn">Skip Item</button>
+                        <button class="add-btn">Add Item</button>
+                    </div> -->
+                </div>
+    
+                <div class="foot">
+                    <p style="color: cornflowerblue;"><i class="fa-solid fa-circle-info"> </i>Add the item to the cart and book now</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="section3">
+            <div class="features">
+                <div class="box">
+                    <i class="fa-solid fa-users" ></i>
+                    <h2>Premium Service</h2>
+                    <p>Elevate your wardrode with our meticulous dry cleaning ensuring garments look and feel as good as new</p>
+                </div>
+                <div class="box">
+                    <i class="fa-solid fa-headset"></i>
+                    <h2>Quick Support</h2>
+                    <p>we're committed to providing prompt solutions to ensure your experiece is smooth and worry-free</p>
+                </div>
+                <div class="box">
+                    <i class="fa-solid fa-truck-fast"></i>
+                    <h2>Hasle Free Delivery</h2>
+                    <p>Enjoy seamless service with our convenient pickup and delivery option, tailored to your schedule.</p>
+                </div>
+                <div class="box">
+                    <i class="fa-solid fa-hand-holding-dollar"></i>
+                    <h2>Affordable Prices</h2>
+                    <p>Experience exceptional care without breaking the bank - our affordable prices make laundary day stress-free</p>
+                </div>
+            </div>
+            <div class="newslatter">
+                <div class="head">
+                    <h1>Subscribe to our newslatter</h1>
+                </div>
+                <div class="detail">
+                    <input type="text" name="" id="name" placeholder="Full Name">
+                    <input type="email" name="" id="email" placeholder="Email">
+                    <input type="submit" id="submit" value="Subscribe">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <div class="box">
+                <h2>LOGO</h2>
+                <h4>About Us</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum, voluptatem!</p>
+            </div>
+            <div class="box">
+                <h4>Important Links</h4>
+                <p>About Us</p>
+                <p>Contact Us</p>
+                <p>Privacy Policy</p>
+                <p>Terms of use</p>
+                <p>Return Policy</p>
+            </div>
+            <div class="box">
+                <h4>Contact Us</h4>
+                <p>mail@site.com</p>
+                <p>+91 91234 56780</p>
+            </div>
+            <div class="box">
+                <h4>Follow Us</h4>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</body>
+</html>
