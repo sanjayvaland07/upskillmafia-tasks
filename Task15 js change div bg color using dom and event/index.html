@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 15 js dom</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: sans-serif
+        }
+        header{
+            width: 100%;
+            height: 80px;
+            background-color: #cacaca;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .colorboxes,.formbox{
+            margin-top: 100px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            flex-wrap: wrap;
+            /* border: 1px solid black; */
+        }
+        .colorboxes .box{
+            width: 200px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+            font-size: 1.3rem;
+        }
+        .formbox .inputbox{
+            width: 300px;
+            height: 40px;
+            padding: 0 20px;
+            font-size: 1.3rem;
+        }
+        .formbox .btn{
+            width: 100px;
+            height: 40px;
+            background-color: #cacaca;
+            font-size: 1.3rem;
+        }
+        .formbox .btn:hover{
+            background-color: #383838;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="greeting" class="greeting">Hello, </h1>
+    </header>
+    <main>
+        <div class="colorboxes">
+            <div class="box" id="red">
+                <p>Red</p>
+            </div>
+            <div class="box" id="blue">
+                <p>Blue</p>
+            </div>
+            <div class="box" id="green">
+                <p>Green</p>
+            </div>
+            <div class="box" id="yellow">
+                <p>Yellow</p>
+            </div>
+        </div>
+        <div class="formbox">
+            <input id="textbox" class="inputbox" type="text" value="">
+            <input id="btn" class="btn" type="submit" value="Greet">
+        </div>
+    </main>
+    <script>
+        const heading = document.querySelector("#greeting");
+        const textbox = document.querySelector("#textbox");
+        const button = document.querySelector("#btn");
+
+        
+        button.onclick = ()=>{
+            heading.innerHTML += " " + textbox.value;
+        }
+
+        const redbox = document.querySelector("#red");
+        const bluebox = document.querySelector("#blue");
+        const greenbox = document.querySelector("#green");
+        const yellowbox = document.querySelector("#yellow");
+
+        redbox.onclick = ()=>{
+            redbox.style = "background-color:red";
+        }
+        bluebox.onclick = ()=>{
+            bluebox.style = "background-color:blue";
+        }
+        greenbox.onclick = ()=>{
+            greenbox.style = "background-color:green";
+        }
+        yellowbox.onclick = ()=>{
+            yellowbox.style = "background-color:yellow";
+        }
+
+        
+
+
+    </script>
+</body>
+</html>
