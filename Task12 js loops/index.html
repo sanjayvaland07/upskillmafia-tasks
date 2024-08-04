@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //thse all are variable declaration
+        let number = 153;
+        let temp = number
+        let sumOfdigits=0;
+        let armstrong=0;
+        let isPrime = true;
+        let factors = "factors : ";
+        console.log("EX : Number :- ",number);
+
+        //this code is to perform sum of digits in a variable
+        while(number>0)
+        {
+            let remainder = number % 10;
+            sumOfdigits=sumOfdigits+remainder;
+            number = number/10;
+        }
+        console.log("Sum of its digits : ",parseInt(sumOfdigits));
+
+        //this code is to check number is armstrong or not
+        number=temp;
+        while(number>0)
+        {
+            let remainder = parseInt((number % 10));
+            armstrong = armstrong + (remainder*remainder*remainder);
+            number = parseInt((number/10));
+        }
+        
+        if(temp == armstrong)
+        {
+            console.log("is it an Armstrong number ? Yes");
+        }
+        else
+        {
+            console.log("is it an Armstrong number ? No");
+        }
+
+        //this code is to check number is prime or not
+        number=temp;
+        for(let i=2;i<number;i++)
+        {
+            if(number % i == 0)
+            {
+                isPrime=false;
+                break;
+            }
+        }
+        if(isPrime)
+        {
+            console.log("Is it a Prime number ? Yes");
+        }
+        else{
+            console.log("Is it a Prime number ? No");
+        }
+
+        //this code is to find the factors of the number
+        for(let i=1;i<=153;i++)
+        {
+            if(number % i == 0)
+            {
+                factors = factors + i + ", ";
+            }
+        }
+        console.log(factors);
+
+    </script>
+</body>
+</html>
